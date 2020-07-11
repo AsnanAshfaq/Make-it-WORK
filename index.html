@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Make it Work</title>
 
-    <!-- bootstrap css  -->
+    <!-- bootstrap css cdn  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- font Awesome css cdn  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
@@ -29,7 +30,7 @@
             <!-- search bar  -->
             <div class="input-group col-sm-7 col-xs-4 col-lg-8 col-md-6 mb-3 p-4  d-flex justify-content-center">
                 <input type="text" class="rounded shadow-none border border-dark p-2 w-50 h-100"
-                    placeholder="Type here for Porjects / Work " aria-label="Recipient's username"
+                    placeholder="Type here for Projects / Work " aria-label="Recipient's username"
                     aria-describedby="basic-addon2">
                 <div class="input-group-append">
                     <button class=" rounded  btn m-1  form-control shadow-none bg-light  text-dark">
@@ -63,74 +64,118 @@
 
             <!-- left side of the page INTERESTED POSTS SECTION  -->
 
-            <div class="col-lg-4 my-4">
+            <div class="col-lg-3 my-4">
                 <p>col 1</p>
             </div>
 
-            <!-- centre of the page  POSTS SECTION-->
+            <!-- centre of the page  CREATE AND POSTS SECTION-->
 
-            <div class="col-lg-4 bg-light my-4">
+            <div class="col-lg-5 my-4">
 
-                <div class="container-fluid ">
+                <!-- creating posts  -->
+                <div class="bg-light">
+                    <div class="container-fluid p-2 ">
+                        <h4 class="text-left border-bottom">Create Post</h4>
+                    </div>
+                    <div class="container-fluid border-bottom p-1">
+                        <div class="row">
+                            <!-- user image  -->
+                            <div class="col-2">
+                                <a href="#">
+                                    <img src="./images/ME.jpg"
+                                        class="img-fluid rounded border rounded-circle w-100 h-100 border-dark"
+                                        alt="User Profile Picture">
+                                </a>
+                            </div>
+                            <!-- posting area  -->
+                            <div class="col-10">
+                                <input type="text" class="form-control  h-100"
+                                    placeholder="Write the description of your Project here...">
+                            </div>
+                        </div>
+                        <div class="container-fluid my-4">
+                            <div class="row">
+                                <!-- upload file -->
+                                <div class="col-6">
+                                    <div class="form-group">
+                                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    </div>
+                                </div>
+                                <div class="col-6 d-flex justify-content-end w-100">
+                                    <button class="btn btn-success">Post</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <br><br>
+
+                <!-- global posts  -->
+                <div class="container-fluid bg-light ">
+
+                    <div class="pt-2 ">
+                        <h4 class="text-left border-bottom">Global Posts</h4>
+                    </div>
                     <div class="row">
                         <!-- user image of the post  -->
-                        <div class="col-3 m-1">
+                        <div class="col-3 p-2">
                             <a href="#">
-                                <img src="./LOGO/make it work.png" class="img-fluid rounded-circle border border-dark"
-                                    alt="">
+                                <img src="./images/ME.jpg" class="img-fluid rounded border border-dark"
+                                    alt="User Profile Picture">
                             </a>
                         </div>
                         <!-- user name and post date  -->
-                        <div class="col-6 m-0">
+                        <div class="col-6 p-2">
                             <p class="m-0 p-1">User name</p>
                             <p class="m-0 p-1">Post DateDate</p>
                         </div>
                         <!-- drop down icon  -->
-                        <div class="col-2 d-flex justify-content-end">
+                        <div class="col-3 dropdown d-flex justify-content-end ">
 
-                            <div class="dropdown">
-                                <button role="button" type="button" class="btn" data-toggle="dropdown">
-                                    <i class="fa fa-caret-down fa-1.5x"></i>
-                                </button>
+                            <button role="button" type="button" class="btn h-50 bg-dark" data-toggle="dropdown">
+                                <i class="fa fa-caret-down fa-1.5x" style="color:white"></i>
+                            </button>
 
 
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                                    <a class="dropdown-item" href="#">Follow /Post User Name/</a>
-                                    <a class="dropdown-item" href="#">Report to Admin</a>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
+                            <div class="dropdown-menu  mr-5" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Follow /Post User Name/</a>
+                                <a class="dropdown-item" href="#">Report to Admin</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
                             </div>
 
-                        </div>
-                    </div>
-                </div>
-                <!-- post text  -->
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12 p-2">
-                            <p>Only 50 characters post is allowed to the user  adipiscing elit. Aliquam sit amet risus rhoncus,
-                                molestie nisl ut, tristique mauris. Fusce finibus purus dolor. Quisque et dapibus
-                                tellus. Duis vestibulum dui lectus, id sodales augue iaculis sit amet. Quisque iaculis
-                                lacus ac enim finibus, eu scelerisque nisl ornare. Fusce ac velit at.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- post image  -->
-                <div class="container-fluid p-0 ">
-                    <div class="row">
-                        <div class="col-12">
-                            <img src="./images/cartoon.jpg" class="img-fluid p-0" alt="Post Image">
-                        </div>
-                    </div>
-                </div>
-                <!-- post STAR section  -->
-                <div class="container-fluid ">
-                    <div class="row">
-                        Stars Section
-                    </div>
-                </div>
 
+                        </div>
+                    </div>
+
+                    <!-- post text  -->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 p-2">
+                                <p>Only 50 word post is allowed to the user adipiscing elit. Aliquam sit amet risus
+                                    rhoncus,
+                                    molestie nisl ut, tristique mauris. Fusce finibus purus dolor. Quisque et dapibus
+                                    tellus. Duis vestibulum dui lectus, id sodales augue iaculis sit amet. Quisque
+                                    iaculis
+                                    lacus ac enim finibus, eu scelerisque nisl ornare. Fusce ac velit at.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- post image  -->
+                    <div class="container-fluid p-0 ">
+                        <div class="row">
+                            <div class="col-12">
+                                <img src="./images/cartoon.jpg" class="img-fluid p-0" alt="Post Image">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- post STAR section  -->
+                    <div class="container-fluid ">
+                        <div class="row">
+                            Stars Section
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- right side of the page CHAT SECTION  -->
