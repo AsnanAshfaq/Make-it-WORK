@@ -9,68 +9,46 @@
     <!-- bootstrap css  -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body>
 
-
-    <div class="container-fluid bg-dark">
+    <div class="container-fluid bg-dark ">
 
         <div class="row">
 
             <!-- brand logo  -->
-            <div class="col-sm-3 col-xs-1 col-lg-1 d-flex justify-content-center w-100 h-100 ">
+            <div class="col-sm-3 col-xs-4 col-lg-1  col-md-2 d-flex justify-content-center w-100 h-100 p-0 pl-1 ">
                 <a class="navbar-brand " href="#">
                     <img src="./LOGO/make it work -2.png" class="w-100 h-100" alt="">
                 </a>
             </div>
 
-            <!-- link tags  -->
-            <div class="col-sm-2 col-xs-3 col-lg-3  d-flex justify-content-center  p-3">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <h4 class="text-light">Link0</h4>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <h4 class="text-light">Link1</h4>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <h4 class="text-light">Link2</h4>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-
             <!-- search bar  -->
-            <div class="col-sm-5 col-xs-4 col-lg-4 p-3">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <button class="input-group-text" id="basic-addon1">
-                            Search
-                        </button>
-                    </div>
-                    <input type="text" class="form-control" placeholder="What Type of Projects you are looking for?"
-                        aria-label="Username" aria-describedby="basic-addon1">
+            <div class="input-group col-sm-7 col-xs-4 col-lg-8 col-md-6 mb-3 p-4  d-flex justify-content-center">
+                <input type="text" class="rounded shadow-none border border-dark p-2 w-50 h-100"
+                    placeholder="Type here for Porjects / Work " aria-label="Recipient's username"
+                    aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class=" rounded  btn m-1  form-control shadow-none bg-light  text-dark">
+                        Search
+                    </button>
                 </div>
             </div>
 
             <!-- side links  -->
-            <div class="col-sm-2 col-xs-4 col-lg-4  d-flex justify-content-center p-3">
+            <div class="col-sm-2 col-xs-4  col-lg-3  col-md-4  d-flex justify-content-end p-4">
                 <ul class="nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <h5 class="text-light">Register</h5>
+                            <h6 class="text-light">Register</h6>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">
-                            <h5 class="text-light">Sign In</h5>
+                            <h6 class="text-light">Sign In</h6>
                         </a>
                     </li>
                 </ul>
@@ -78,14 +56,115 @@
         </div>
     </div>
 
-    <div class="container-fluid p-0">
-        <img src="./images/code.jpg" class="img-responsive w-100 h-100" alt="">
+
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- left side of the page INTERESTED POSTS SECTION  -->
+
+            <div class="col-lg-4 my-4">
+                <p>col 1</p>
+            </div>
+
+            <!-- centre of the page  POSTS SECTION-->
+
+            <div class="col-lg-4 bg-light my-4">
+
+                <div class="container-fluid ">
+
+                    <div class="row">
+                        <!-- user image of the post  -->
+                        <div class="col-3 m-1">
+                            <a href="#">
+                                <img src="./LOGO/make it work.png" class="img-fluid rounded-circle border border-dark"
+                                    alt="">
+                            </a>
+                        </div>
+                        <!-- user name and post date  -->
+                        <div class="col-6 m-0">
+                            <p class="m-0 p-1">User name</p>
+                            <p class="m-0 p-1">Post DateDate</p>
+                        </div>
+                        <!-- drop down icon  -->
+                        <div class="col-2 d-flex justify-content-end">
+
+                            <div class="dropdown">
+                                <button role="button" type="button" class="btn" data-toggle="dropdown">
+                                    <i class="fa fa-caret-down fa-1.5x"></i>
+                                </button>
+
+
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="#">Follow /Post User Name/</a>
+                                    <a class="dropdown-item" href="#">Report to Admin</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- post text  -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 p-2">
+                            <p>Only 50 characters post is allowed to the user  adipiscing elit. Aliquam sit amet risus rhoncus,
+                                molestie nisl ut, tristique mauris. Fusce finibus purus dolor. Quisque et dapibus
+                                tellus. Duis vestibulum dui lectus, id sodales augue iaculis sit amet. Quisque iaculis
+                                lacus ac enim finibus, eu scelerisque nisl ornare. Fusce ac velit at.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- post image  -->
+                <div class="container-fluid p-0 ">
+                    <div class="row">
+                        <div class="col-12">
+                            <img src="./images/cartoon.jpg" class="img-fluid p-0" alt="Post Image">
+                        </div>
+                    </div>
+                </div>
+                <!-- post STAR section  -->
+                <div class="container-fluid ">
+                    <div class="row">
+                        Stars Section
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- right side of the page CHAT SECTION  -->
+            <div class="col-lg-4 my-4">
+                <p>col 3</p>
+            </div>
+        </div>
     </div>
 
+    <br><br><br><br><br><br><br><br><br><br>
+
+    <!-- footer  -->
+    <!-- <div class="container-fluid bg-dark">
+        <div class="row">
+            <!-- brand logo  -->
+    <!-- <div class="col-sm-3 col-xs-1 col-lg-3 d-flex justify-content-center w-100 h-100 ">
+                <a class="navbar-brand " href="#">
+                    <img src="./LOGO/make it work -2.png" class="w-100 h-100" alt="">
+                </a>
+            </div>  -->
+
+    <!-- contact us  -->
+    <!-- <div class="col-sm-3 col-xs-1 col-lg-1 d-flex justify-content-center w-100 h-100 ">
+                <h3>Contact US</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">First item</li>
+                    <li class="list-group-item">Second item</li>
+                    <li class="list-group-item">Third item</li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
 
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
     </script>
