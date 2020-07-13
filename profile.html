@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+
+    <!-- bootstrap css cdn  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- font Awesome  4 css cdn  -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- font awesome 5 cdn  -->
+    <script src="https://kit.fontawesome.com/a086ae4b2b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- header  -->
+    <div class="container-fluid bg-dark ">
+        <div class="row">
+            <!-- brand logo  -->
+            <div class="col-sm-3 col-xs-4 col-lg-1  col-md-2 d-flex justify-content-center w-100 h-100 p-0 pl-1 ">
+                <a class="navbar-brand p-0 m-0 " href="./index.html">
+                    <img src="./LOGO/logo.png" class="w-100 h-100" alt="">
+                </a>
+            </div>
+
+            <!-- search bar  -->
+            <div class="input-group col-sm-7 col-xs-4 col-lg-8 col-md-6 mb-3 p-4  d-flex justify-content-center">
+                <input type="text" class="rounded shadow-none border border-dark p-2 w-50 h-100"
+                    placeholder="Type here for Projects / Work " aria-label="Recipient's username"
+                    aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                    <button class="btn rounded  btn m-1  form-control shadow-none bg-light  text-dark">
+                        Search
+                    </button>
+                </div>
+            </div>
+
+            <!-- side links  -->
+            <div class="col-sm-2 col-xs-4  col-lg-3  col-md-4  d-flex justify-content-end p-4">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <h6 class="text-light">Register</h6>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <h6 class="text-light">Sign In</h6>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- user profile  -->
+            <div class="col-lg-3 my-4 border-right">
+                <div class="container-fluid">
+                    <div class="row my-3">
+                        <!-- user image  -->
+                        <div class="col-lg-8 col-sm-6 col-xs-3 col-md-4">
+                            <img src="./images/chat-image.jpg"
+                                class="img-fluid rounded border rounded-circle border-dark" alt="User Profile Picture">
+                        </div>
+                        <!-- edit user image  -->
+                        <div class="col-lg-4 col-sm-2 col-xs-2 p-0 m-0 d-flex align-items-end">
+                            <a href="#" class=" bg-light text-dark" data-toggle="collapse"
+                                data-target="#collapseExample" aria-expanded="false"
+                                aria-controls="collapseExample">Edit Picture</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <div class="collapse" id="collapseExample">
+                                <div class="form-group">
+                                    <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                    <button type="button" class="btn btn-dark text-light p-1 mt-1">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row my-3">
+                        <!-- user name  -->
+                        <div class="col-lg-8 col-sm-6 col-xs-3 col-md-4">
+                            <h3 class="text-center" style="user-select: none;">Brendon Parker</h3>
+                        </div>
+                        <!--edit  user name  -->
+                        <div class="col-lg-4 col-sm-2 col-xs-2 p-3 m-0 d-flex align-items-end ">
+                            <a href="#">
+                                <i class="fa fa-pen" style="color: black;" data-toggle="modal"
+                                    data-target="#exampleModal"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- skills  -->
+                        <div class="col-4 float-right my-2">
+                            <div class="row d-flex">
+                                <div class="col-sm-6 col-xs-6 p-0">
+                                    <h5 class="text-dark" style="user-select: none;">Skills</h5>
+                                </div>
+                                <!-- edit skills  -->
+                                <div class="col-sm-6 col-xs-6">
+                                    <a href="#">
+                                        <i class="fa fa-pen" style="color: black;" data-toggle="modal"
+                                            data-target="#exampleModal"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 p-0 mx-2 w-100">
+                            <p class="text-dark " style="user-select: none;">Lorem ipsum dolor sit amet
+                                consectetur
+                                adipisicing elit. Minima autem qui</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <!-- experience  -->
+                        <div class="col-6 float-right my-2">
+                            <div class="row d-flex">
+                                <div class="col-sm p-0">
+                                    <h5 class="text-dark" style="user-select: none;">Experience</h5>
+                                </div>
+                                <!-- edit experience  -->
+                                <div class="col-sm">
+                                    <a href="#">
+                                        <i class="fa fa-pen" style="color: black;" data-toggle="modal"
+                                            data-target="#exampleModal"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 p-0 mx-2 w-100">
+                            <p class="text-dark " style="user-select: none;">Lorem ipsum dolor sit amet
+                                consectetur
+                                adipisicing elit. Minima autem qui</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- my posts sections  -->
+            <div class="col-lg-6 my-2">
+                <h5 class="mt-3" style="user-select: none;">My Posts</h5>
+
+                <div class="container-fluid bg-light my-2">
+                    <div class="row">
+                        <!-- user image of the post  -->
+                        <div class="col-2 p-3">
+                            <a href="#">
+                                <img src="./images/chat-image.jpg" class="img-fluid rounded border"
+                                    alt="User Profile Picture">
+                            </a>
+                        </div>
+                        <!-- user name and post date  -->
+                        <div class="col-7 p-2">
+                            <p class="m-0 p-1" style="user-select: none;">Brendon Parker</p>
+                            <p class="m-0 p-1" style="user-select: none;">July 2nd, 2020</p>
+                        </div>
+                        <!-- drop down icon  -->
+                        <div class="col-3 dropdown d-flex justify-content-end">
+
+                            <button role="button" type="button" class="btn h-25 w-25 shadow-none p-0"
+                                data-toggle="dropdown">
+                                <i class="fa fa-caret-down fa-2x" style="color:black"></i>
+                            </button>
+                            <!-- drop down list  -->
+                            <div class="dropdown-menu  mr-5" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Edit</a>
+                                <a class="dropdown-item" href="#">Delete</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- post text  -->
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 p-2">
+                                <p style="user-select: none;">
+                                    The greates of all players has once said
+                                    "You guys, you fill the stadium, you make me nervous, you make me go out and
+                                    practice, I'd just like to thank you... for everything. It wouldn't be the same
+                                    without you guys." </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- post image  -->
+                    <div class="container-fluid p-0 ">
+                        <div class="row">
+                            <div class="col-12">
+                                <img src="./images/fed-blog.jpg" class="img-fluid w-100 h-auto p-0" alt="Post Image">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- post STAR section  -->
+                    <div class="container-fluid ">
+                        <div class="row">
+                            Stars Section
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- right side of the page CHAT SECTION  -->
+            <div class="col-lg-3 my-4 border-left">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col">
+                            <h5 style="user-select: none;">Chat</h5>
+                        </div>
+                    </div>
+                    <div class="row bg-light my-2">
+                        <!-- user image  -->
+                        <div class="col-3 d-flex justify-content-center p-2">
+                            <a href="#" class="nav-link p-0 m-0 ">
+                                <img src="./images/chat-image.jpg"
+                                    class="img-fluid rounded border rounded-circle w-100 h-100 border-dark"
+                                    alt="User Profile Picture">
+                            </a>
+                        </div>
+                        <!-- user name  -->
+                        <div class="col-9  d-flex justify-content-center p-0 m-0">
+                            <a href="#" class="nav-link w-100 d-flex justify-content-center py-2 px-0 m-0">
+                                <h6 class="w-100 ml-2 pt-3 text-dark">Brendon Parker</h6>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row bg-light my-2">
+                        <!-- user image  -->
+                        <div class="col-3 d-flex justify-content-center p-2">
+                            <a href="#" class="nav-link p-0 m-0 ">
+                                <img src="./images/federer.jpg"
+                                    class="img-fluid rounded border rounded-circle w-100 h-100 border-dark"
+                                    alt="User Profile Picture">
+                            </a>
+                        </div>
+                        <!-- user name  -->
+                        <div class="col-9  d-flex justify-content-center p-0 m-0">
+                            <a href="#" class="nav-link w-100 d-flex justify-content-center py-2 px-0 m-0">
+                                <h6 class="w-100 ml-2 pt-3 text-dark">Roger Federer</h6>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br><br>
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal for Editing</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" class="form-control" placeholder="Enter your Name here">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- bootstrap javascript  -->
+
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
