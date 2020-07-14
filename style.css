@@ -1,0 +1,12 @@
+
+.form-control{
+    text-indent: 30px;
+}
+
+.stdL-icon {
+    top: 12px; left: 10px; font-size: 15px;
+}
+body{
+    margin: 0;
+    font-family: "Lato",sans-serif;
+}
