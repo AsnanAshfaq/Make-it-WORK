@@ -1,6 +1,0 @@
-left side will contain the project with the highest ranking of a category which user had selected during the account 
-creatioin time
-
-Right Side will contain the Chat Section
-
-Centre will contain the Global Post
